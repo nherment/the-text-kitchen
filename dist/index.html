@@ -1,41 +1,57 @@
 <!doctype html>
-<title>Example</title>
-<style>
-  * {
-   box-sizing: border-box; 
-  }
-  body {
-    margin: 0;
-  }
-  #main {
-    display: flex;
-    min-height: calc(100vh - 40vh);
-  }
-  #main > article {
-    flex: 1;
-  }
-  #main > nav, 
-  #main > aside {
-    flex: 0 0 20vw;
-    background: beige;
-  }
-  #main > nav {
-    order: -1;
-  }
-  header, footer, article, nav, aside {
-    padding: 1em;
-  }
-  header, footer {
-    background: yellowgreen;
-    height: 20vh;
-  }
-</style>
-<body>
-  <header>Header</header>
-  <div id="main">
-    <article>Article</article>
-    <nav>Nav</nav>
-    <aside>Aside</aside>
-  </div>
-  <footer>Footer</footer>
-</body>
+<head>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>The text kitchen</title>
+    <meta name="description" content="No-nonsense and vetted cooking recipes">
+    <meta name="keywords" content="cooking, kitchen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="page.css" media="screen" />
+
+    
+  </head>
+  <body>
+    <div class="resume">
+      <header>
+        <h1>The text kitchen</h1>
+        <p class="details">
+          No-nonsense and vetted cooking recipes.
+        </p>
+      </header>
+      <div class="section-line"></div>
+      <section>
+        <h2>Main dishes</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <a href="port-pork.html">Pork medallions with port sauce</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="section-line"></div>
+      <section>
+        <h2>Desserts</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <a href="crepes.html">Crepes (French pancakes)</a>
+            </li>
+            <li>
+              <a href="paris-brest.html">Paris-Brest</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="section-line"></div>
+      <footer>
+        <div>
+          <h4>Notes</h4>
+          <p></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

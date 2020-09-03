@@ -1,0 +1,239 @@
+body {
+  background: #EEEEEE;
+  font: 12px Arial, Helvetica Neue, Helvetica, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
+}
+
+em {
+  color:#999;
+}
+
+ul {
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 2px;
+}
+a,
+a:visited {
+  color: #00A0B0;
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.resume {
+  margin:0 auto;
+  max-width:600px;
+  padding:80px 100px;
+  background:#fff;
+  border:1px solid #ccc;
+  box-shadow:2px 2px 4px #aaa;
+  -webkit-box-shadow:2px 2px 4px #aaa;
+}
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
+.details {
+  color: #555;
+}
+header > h1,
+header > h2,
+header > h4 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+header > h2 {
+  margin-left: 10px;
+}
+header > p {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin-bottom: 30px;
+  position: relative;
+}
+.section-line {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin: 20px 0;
+}
+section {
+  display: flex;
+  width: 100%;
+}
+section > h2 {
+  width: 18%;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  vertical-align: top;
+  display: inline-block;
+}
+section > .content {
+  width: 80%;
+  vertical-align: top;
+  display: inline-block;
+}
+.content h2 {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  width: 100%;
+}
+.content ul,
+.content ol {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+.content ul {
+  list-style-type: circle;
+}
+.content ol > li {
+  margin-bottom: 1em;
+}
+
+
+ul.technologies {
+  padding: 0;
+  margin: 0;
+}
+           
+ul.technologies > li {
+  list-style: none;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  padding: 0 3px;
+  display: inline-block;
+  border: 1px solid #555;
+  color: #555;
+  border-radius: 2px;
+}
+
+ul.technologies > li b {
+  color: #333;
+}
+
+.content h3 {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.content h3 > .duration {
+  font-size: .9em;
+  font-weight: normal;
+  margin-left: 10px;
+  display: block;
+  float: right;
+}
+.content > div {
+  margin: 20px 0;
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reference {
+  line-height: 1;
+  font-size: 80%;
+  vertical-align: super;
+}
+
+.references {
+  margin: 0;
+  padding: 0;
+}
+.references p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+footer h4 {
+  color: #555;
+  font-weight: normal;
+  margin: 12px 0 4px 0 ;
+}
+footer .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .links li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin:0;
+    font-size:14px;
+  }
+  .resume {
+    margin: 0;
+    max-width: 100%;
+    min-width: 540px;
+    padding: 0.5em;
+    border:none;
+  }
+  .section-content{ width:100%; }
+  .section-content .date{ padding-right:2em; }
+  .sectionName{ width:auto; }
+  .largeFont{ font-size:20px; }
+  .smallFont{ font-size:14px; }
+
+  .references {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .resume {
+    min-width: 200px;
+  }
+  section {
+    display: block;
+  }
+  section > h2 {
+    font-size: 1.3em;
+  }
+  section > h2,
+  section > .content {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+@media print {
+  body {
+    font: 11px;
+    margin: 10px 0 0 0;
+  }
+  .resume {
+    margin:0 auto;
+    max-width:650px; /* slightly larger than original to print on 1 single page of 'letter' format */
+    padding:0px 0px;
+    border:0px;
+    background:#fff;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+  }
+  a { color:black; }
+  .company > a { color: #555; }
+}
