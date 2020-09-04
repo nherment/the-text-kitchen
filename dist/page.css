@@ -28,8 +28,8 @@ h1, h2, h3, p {
 
 .resume {
   margin:0 auto;
-  max-width:600px;
-  padding:80px 100px;
+  max-width:700px;
+  padding:40px 50px;
   background:#fff;
   border:1px solid #ccc;
   box-shadow:2px 2px 4px #aaa;
@@ -47,19 +47,28 @@ header > h1,
 header > h2,
 header > h4 {
   display: inline-block;
-  margin: 0;
+  margin: 0 1em 0 0;
   padding: 0;
 }
 header > h2 {
   margin-left: 10px;
 }
 header > p {
-  margin: 0;
+  margin: 0 1em 0 0;
   padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 header {
   margin-bottom: 30px;
-  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+header .details {
+  flex-grow: 1;
 }
 .section-line {
   border-style: dashed;
@@ -101,6 +110,9 @@ section > .content {
   list-style-type: circle;
 }
 .content ol > li {
+  margin-bottom: 1em;
+}
+.content p {
   margin-bottom: 1em;
 }
 
